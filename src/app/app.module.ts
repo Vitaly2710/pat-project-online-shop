@@ -6,17 +6,23 @@ import { NavigationComponent } from './shared/components/navigation/navigation.c
 import { LogoComponent } from './shared/components/logo/logo.component';
 import {CommonModule} from "@angular/common";
 import { ButtonComponent } from './shared/components/button/button.component';
+import {MatIconModule} from '@angular/material/icon'
+import {ReactiveFormsModule} from "@angular/forms";
+import { MainSliderComponent } from './shared/components/main-slider/main-slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     LogoComponent,
-    ButtonComponent
+    ButtonComponent,
+    MainSliderComponent
   ],
   imports: [
     BrowserModule,
-    CommonModule
+    CommonModule,
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
