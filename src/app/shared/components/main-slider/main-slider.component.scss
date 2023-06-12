@@ -1,0 +1,28 @@
+.wrapper {
+  background-image: url("../../../../assets/images/Group-7100.svg");
+
+
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img-slider {
+      height: 200px;
+      width: 21%;
+      background-image: url("../../../../assets/images/bascet-with-products.svg");
+      background-repeat: no-repeat;
+    }
+
+    .slider-title {
+      font-family: 'Rubik', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-left: 1rem;
+    }
+  }
+}
+
+
