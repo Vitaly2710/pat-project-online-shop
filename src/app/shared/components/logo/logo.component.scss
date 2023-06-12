@@ -1,0 +1,17 @@
+@import "src/scss/colors";
+
+.wrapper-icon {
+  display: flex;
+
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-name {
+    margin-left: 10%;
+    color: $mainSurface;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+}
