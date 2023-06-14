@@ -1,0 +1,40 @@
+@import "src/scss/colors";
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .current-card {
+    position: relative;
+
+
+    .card-prices {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .product-img {
+    width: 270px;
+    height: 160px;
+  }
+
+  .add-favorite {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+
+  .percent-discount {
+    position: absolute;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.2rem;
+    bottom:10%;
+    left: 5%;
+    background-color: $mainDiscountBack;
+
+    .value {
+      color: white;
+    }
+  }
+}

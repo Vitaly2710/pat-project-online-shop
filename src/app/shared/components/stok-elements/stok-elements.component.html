@@ -1,1 +1,34 @@
-<p>stok-elements works!</p>
+<div class="card-wrapper">
+  <div *ngFor="let item of config">
+    <div class="current-card">
+      <img src="{{item.img}}" alt="{{item.title}}" class="product-img"/>
+      <div class="add-favorite">
+        <mat-icon>favorite_border</mat-icon>
+      </div>
+      <div class="percent-discount">
+        <div class="value">-{{item.discount}}%</div>
+      </div>
+      <div class="card-info">
+        <div class="card-prices">
+          <div class="price-with-card">
+            <p class="total">{{item.discountPrice}}</p>
+            <p>С картой</p>
+          </div>
+          <div class="price-without">
+            <p class="total">{{item.price}}</p>
+            <p>Обычная</p>
+          </div>
+        </div>
+        <p class="product-naming">
+          {{item.title}}
+        </p>
+        <p *ngIf="item.country" class="location-made">{{item.country}}</p>
+        <div class="review-stars"></div>
+      </div>
+    </div>
+    <button>
+      В корзину
+    </button>
+  </div>
+</div>
+
