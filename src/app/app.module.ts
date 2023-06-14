@@ -9,6 +9,8 @@ import { ButtonComponent } from './shared/components/button/button.component';
 import {MatIconModule} from '@angular/material/icon'
 import {ReactiveFormsModule} from "@angular/forms";
 import { MainSliderComponent } from './shared/components/main-slider/main-slider.component';
+import { MainComponent } from './shared/components/main/main.component';
+import { StokElementsComponent } from './shared/components/stok-elements/stok-elements.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MainSliderComponent } from './shared/components/main-slider/main-slider
     NavigationComponent,
     LogoComponent,
     ButtonComponent,
-    MainSliderComponent
+    MainSliderComponent,
+    MainComponent,
+    StokElementsComponent
   ],
   imports: [
     BrowserModule,

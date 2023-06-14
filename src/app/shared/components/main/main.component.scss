@@ -1,0 +1,42 @@
+@import "src/scss/colors";
+
+section {
+  background-color: $mainBackground;
+  padding-top: 4.5rem;
+
+  .main-container {
+    margin: 0 auto;
+    width: 1440px;
+
+    .main-stock-header {
+      display: flex;
+      justify-content: space-between;
+
+      .stock-in-main {
+        font-family: 'Rubik', sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      .wrapper-all-stock {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .all-stock-title {
+          margin-right: 0.5rem;
+          color: $mainStockFont;
+          font-family: 'Rubik', sans-serif;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+
+        mat-icon {
+          color: $mainStockFont;
+
+        }
+      }
+    }
+
+  }
+}
