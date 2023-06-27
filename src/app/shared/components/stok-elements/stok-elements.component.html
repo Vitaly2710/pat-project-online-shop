@@ -12,23 +12,29 @@
         <div class="card-prices">
           <div class="price-with-card">
             <p class="total">{{item.discountPrice}}</p>
-            <p>С картой</p>
+            <p [class.hide]="!item.price">С картой</p>
           </div>
-          <div class="price-without">
-            <p class="total">{{item.price}}</p>
+          <div class="price-without price-with-card" *ngIf="item.price">
+            <p class="total" style="font-weight: normal">{{item.price}}</p>
             <p>Обычная</p>
           </div>
         </div>
         <p class="product-naming">
           {{item.title}}
         </p>
-        <p *ngIf="item.country" class="location-made">{{item.country}}</p>
-        <div class="review-stars"></div>
+        <div class="review-stars">
+          <div *ngFor="let star of item.review">
+            <ng-container *ngIf="star"><mat-icon class="active-star">star</mat-icon></ng-container>
+            <ng-container *ngIf="!star"><mat-icon class="hide-star">star</mat-icon></ng-container>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="add-to-basket">
+          В корзину
+        </button>
       </div>
     </div>
-    <button>
-      В корзину
-    </button>
   </div>
 </div>
 

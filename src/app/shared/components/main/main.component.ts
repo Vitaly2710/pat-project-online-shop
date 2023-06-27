@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MockStockCardsData} from "../../../mock/stock-cards";
+import {MockNewCardsData, MockOldOrderCardsData, MockStockCardsData} from "../../../mock/stock-cards";
 
 @Component({
   selector: 'app-main',
@@ -9,6 +9,8 @@ import {MockStockCardsData} from "../../../mock/stock-cards";
 export class MainComponent implements OnInit {
 
   mockForStockCards = MockStockCardsData;
+  mockForNewCards = MockNewCardsData;
+  mockOldOrderCardsData = MockOldOrderCardsData;
 
   constructor() { }
 

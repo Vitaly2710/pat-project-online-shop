@@ -6,11 +6,35 @@
 
   .current-card {
     position: relative;
+    background-color: white;
+    padding-bottom: 0.1rem;
 
 
     .card-prices {
       display: flex;
       justify-content: space-between;
+    }
+
+    .price-with-card {
+      margin: 0.5rem;
+
+      p:first-child {
+        color: $mainSurface;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      p:last-child {
+        margin: 0;
+        color: #BFBFBF;
+        font-family: 'Rubik', sans-serif;
+      }
+
+      .hide {
+        visibility: hidden;
+      }
     }
   }
 
@@ -23,13 +47,18 @@
     position: absolute;
     top: 5%;
     right: 5%;
+
+    mat-icon {
+      background-color: #9f9f9f17;
+      color: #777777;
+    }
   }
 
   .percent-discount {
     position: absolute;
     padding: 0.3rem 0.5rem;
     border-radius: 0.2rem;
-    bottom:10%;
+    bottom:60%;
     left: 5%;
     background-color: $mainDiscountBack;
 
@@ -37,4 +66,54 @@
       color: white;
     }
   }
+
+  .product-naming {
+    max-width: 15rem;
+    margin: 0.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: $mainSurface;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .review-stars {
+    display: flex;
+    margin-left: 0.5rem;
+
+    .active-star {
+      color: $mainDiscountBack;
+    }
+
+    .hide-star {
+      color: $mainHideStars;
+    }
+  }
+
+  .button-container {
+    margin: 0.5rem;
+
+    .add-to-basket {
+      width: 100%;
+      color: $mainSecondary;
+      border: 1px solid $mainSecondary;
+      text-align: center;
+      outline: none;
+      text-decoration: none;
+      padding: 0.7rem;
+      border-radius: 4px;
+      background-color: transparent;
+      font-family: 'Rubik', sans-serif;
+      font-size: 1rem;
+    }
+
+    .add-to-basket:hover {
+      color: white;
+      background-color: $mainDiscountBack;
+      border: none;
+    }
+  }
+
 }

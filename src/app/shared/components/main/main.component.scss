@@ -3,6 +3,7 @@
 section {
   background-color: $mainBackground;
   padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 
   .main-container {
     margin: 0 auto;
@@ -16,6 +17,7 @@ section {
         font-family: 'Rubik', sans-serif;
         font-weight: bold;
         font-size: 2rem;
+        color: $mainSurface;
       }
 
       .wrapper-all-stock {
@@ -36,6 +38,10 @@ section {
 
         }
       }
+    }
+
+    .new-items {
+      margin-top: 7rem;
     }
 
   }

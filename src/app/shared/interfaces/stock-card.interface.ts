@@ -1,9 +1,9 @@
 export interface StockCardInterface {
   img: string;
   discount: number;
-  price: number;
-  discountPrice: number;
+  price?: string;
+  discountPrice: string;
   title: string;
   country?: string;
-  review: number;
+  review: number[];
 }

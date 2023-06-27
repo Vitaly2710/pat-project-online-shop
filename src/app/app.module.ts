@@ -11,6 +11,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { MainSliderComponent } from './shared/components/main-slider/main-slider.component';
 import { MainComponent } from './shared/components/main/main.component';
 import { StokElementsComponent } from './shared/components/stok-elements/stok-elements.component';
+import { SpecialOfferComponent } from './shared/components/special-offer/special-offer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StokElementsComponent } from './shared/components/stok-elements/stok-el
     ButtonComponent,
     MainSliderComponent,
     MainComponent,
-    StokElementsComponent
+    StokElementsComponent,
+    SpecialOfferComponent
   ],
   imports: [
     BrowserModule,

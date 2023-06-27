@@ -8,7 +8,22 @@
       </div>
     </div>
     <app-stok-elements [config]="mockForStockCards">
-
     </app-stok-elements>
+    <div class="main-stock-header new-items">
+      <p class="stock-in-main">Новинки</p>
+      <div class="wrapper-all-stock">
+        <p class="all-stock-title">Все новинки</p>
+        <mat-icon>chevron_right</mat-icon>
+      </div>
+    </div>
+    <app-stok-elements [config]="mockForNewCards"></app-stok-elements>
+    <div class="main-stock-header new-items">
+      <p class="stock-in-main">Покупали раньше</p>
+      <div class="wrapper-all-stock">
+        <p class="all-stock-title">Все покупки</p>
+        <mat-icon>chevron_right</mat-icon>
+      </div>
+    </div>
+    <app-stok-elements [config]="mockOldOrderCardsData"></app-stok-elements>
   </div>
 </section>
