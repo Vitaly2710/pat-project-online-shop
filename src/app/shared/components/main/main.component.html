@@ -25,5 +25,22 @@
       </div>
     </div>
     <app-stok-elements [config]="mockOldOrderCardsData"></app-stok-elements>
+    <div class="main-stock-header new-items">
+      <p class="stock-in-main">Специальные предложения</p>
+    </div>
+    <app-special-offer class="special-offer"></app-special-offer>
+    <div class="main-stock-header new-items">
+      <p class="stock-in-main">Наши магазины</p>
+    </div>
+    <div class="container">
+      <ya-map [center]="[53.902284, 27.561831]" [zoom]="10">
+        <ya-placemark [geometry]="[53.922024, 27.599125]" [properties]="{iconCaption :'магазин №1'}"></ya-placemark>
+        <ya-placemark [geometry]="[53.927863, 27.651795]" [properties]="{iconCaption :'магазин №2'}"></ya-placemark>
+      </ya-map>
+    </div>
+    <div class="main-stock-header new-items">
+      <p class="stock-in-main">Статьи</p>
+    </div>
+    <app-posts></app-posts>
   </div>
 </section>

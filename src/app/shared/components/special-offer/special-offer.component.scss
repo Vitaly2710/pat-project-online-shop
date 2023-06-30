@@ -1,0 +1,63 @@
+@import "src/scss/colors";
+
+.special-container {
+  display: flex;
+  justify-content: space-between;
+
+  .special-card {
+    display: flex;
+    position: relative;
+    padding: 2rem 18rem 2.5rem 2.5rem;
+    background-color: $mainPure;
+    border-radius: 4px;
+
+    h5 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.5rem;
+      color: $mainSurface;
+      margin: 0;
+      max-width: 22rem;
+    }
+
+    p {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1rem;
+      max-width: 22rem;
+    }
+
+    .card-img-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .special-bonus {
+    display: flex;
+    position: relative;
+    padding: 2rem 24rem 2.5rem 2.5rem;
+    background-color: #E5FFDE;
+    border-radius: 4px;
+
+    h5 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.5rem;
+      color: $mainSurface;
+      margin: 0;
+      max-width: 15rem;
+    }
+
+    p {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1rem;
+      max-width: 13rem;
+    }
+
+    .card-img-container {
+      position: absolute;
+      top: 5%;
+      right: 1%;
+    }
+  }
+
+}
